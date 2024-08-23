@@ -3,12 +3,11 @@ using GlobalStore.Domain.Catalog;
 
 namespace GlobalStore.Api.Controllers
 {
-    [ApiCoontroller]
+    [ApiController]
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
     
-    }
     [HttpGet]
     public IActionResult GetItems()
     {
@@ -18,5 +17,6 @@ namespace GlobalStore.Api.Controllers
             new Item("Shorts", "Ohio State shorts.", "Nike", 49.99m)
         };
         return Ok(items);
+    }
     }
 }
