@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalStore.Api", "GlobalSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalStore.Domain", "GlobalStore.Domain\GlobalStore.Domain.csproj", "{6CDEB461-7B3A-441C-9D3D-CDEA0C61F276}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalStore.Data", "GlobalStore.Data\GlobalStore.Data.csproj", "{6FC09639-2DE5-44C2-94B1-F6BC0738A8B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6CDEB461-7B3A-441C-9D3D-CDEA0C61F276}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDEB461-7B3A-441C-9D3D-CDEA0C61F276}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CDEB461-7B3A-441C-9D3D-CDEA0C61F276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC09639-2DE5-44C2-94B1-F6BC0738A8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC09639-2DE5-44C2-94B1-F6BC0738A8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC09639-2DE5-44C2-94B1-F6BC0738A8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC09639-2DE5-44C2-94B1-F6BC0738A8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

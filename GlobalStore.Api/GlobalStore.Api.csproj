@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GlobalStore.Domain\GlobalStore.Domain.csproj" />
+    <ProjectReference Include="..\GlobalStore.Data\GlobalStore.Data.csproj" />
   </ItemGroup>
 
 </Project>
