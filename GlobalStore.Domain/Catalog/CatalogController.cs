@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using GlobalStore.Domain.Catalog;
+using GlobalStore.Data;
 
 namespace GlobalStore.Api.Controllers
 {
@@ -7,16 +8,17 @@ namespace GlobalStore.Api.Controllers
     [Route("/controller")]
     public class CatalogController : ControllerBase
     {
+        private readonly StoreContext_db;
+        
+        public CatalogController(StoreContext db)
+        {
+            _db = db;
+        }
     
     [HttpGet]
     public IActionResult GetItems()
     {
-        var items = new List<Item>()
-        {
-            new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m),
-            new Item("Shorts", "Ohio State shorts.", "Nike", 49.99m)
-        };
-        return Ok(items);
+        return Ok(_db.Item);
     }
     [HttpGet("{id: int}" )]
     public IActionResult GetItem(int id)

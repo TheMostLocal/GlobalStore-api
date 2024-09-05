@@ -17,3 +17,7 @@ public Rating(int stars, string userName, string review){
         this.Review = review;
     }
     }
+public class Rating{
+    public int Id { get; set; }
+    public int Star { get; set; }
+}
